@@ -56,6 +56,51 @@
             </objects>
             <point key="canvasLocation" x="1050.7246376811595" y="97.767857142857139"/>
         </scene>
+        <!--View Controller-->
+        <scene sceneID="O2D-lt-dpU">
+            <objects>
+                <viewController id="ikS-0M-Apr" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="4gT-lP-fe2">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="PTR-oO-ZGC"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="czC-cN-XLN" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1051" y="833"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="ifd-Tn-IdO">
+            <objects>
+                <viewController id="2hy-mm-yHj" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="C1n-oo-lOD">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="0Lu-fq-WSF"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vZs-JT-n83" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1854" y="832"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="USf-Mj-neR">
+            <objects>
+                <viewController id="3w5-1I-uQG" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="xj2-6Y-5WD">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="WAn-iP-cJs"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="I7r-Cd-K0N" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2636" y="842"/>
+        </scene>
         <!--Dashboard-->
         <scene sceneID="PFq-Cc-tfi">
             <objects>
@@ -71,6 +116,23 @@
                                     <outlet property="delegate" destination="WOU-Se-wQD" id="cki-sx-tV1"/>
                                 </connections>
                             </mapView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ipn-Og-L6G">
+                                <rect key="frame" x="26" y="832" width="77" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="26"/>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Profile" image="person.crop.square.fill" catalog="system"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hFy-Tt-VdX">
+                                <rect key="frame" x="164" y="832" width="87" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Connections"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Te-Nd-y2F">
+                                <rect key="frame" x="337" y="832" width="57" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Settings"/>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="9xx-43-Cnv"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -102,8 +164,12 @@
     </scenes>
     <resources>
         <image name="person.3.fill" catalog="system" width="128" height="61"/>
+        <image name="person.crop.square.fill" catalog="system" width="128" height="114"/>
         <systemColor name="secondaryLabelColor">
             <color red="0.23529411764705882" green="0.23529411764705882" blue="0.2627450980392157" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
     </resources>
 </document>
