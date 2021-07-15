@@ -16,6 +16,8 @@
 		98258A402671D8C800567BC4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 98258A3F2671D8C800567BC4 /* main.m */; };
 		98258A4D2671DB7100567BC4 /* Factor.m in Sources */ = {isa = PBXBuildFile; fileRef = 98258A4C2671DB7100567BC4 /* Factor.m */; };
 		98284AD2268796600018AE4D /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 98284AD12687965F0018AE4D /* MapKit.framework */; };
+		98D4CF98269FF8AE00E360C9 /* MKCoordinateRegion+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98D4CF97269FF8AE00E360C9 /* MKCoordinateRegion+Extension.swift */; };
+		98D4CF9C269FFE3400E360C9 /* DashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98D4CF9B269FFE3400E360C9 /* DashView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +37,8 @@
 		98258A4B2671DB6300567BC4 /* Factor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Factor.h; sourceTree = "<group>"; };
 		98258A4C2671DB7100567BC4 /* Factor.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Factor.m; sourceTree = "<group>"; };
 		98284AD12687965F0018AE4D /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		98D4CF97269FF8AE00E360C9 /* MKCoordinateRegion+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MKCoordinateRegion+Extension.swift"; sourceTree = "<group>"; };
+		98D4CF9B269FFE3400E360C9 /* DashView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,12 +73,15 @@
 		98258A2C2671D8C600567BC4 /* Loot */ = {
 			isa = PBXGroup;
 			children = (
+				98D4CF96269FF89500E360C9 /* Extensions */,
+				98D4CF93269FF1E100E360C9 /* Managers */,
 				98258A2D2671D8C600567BC4 /* AppDelegate.h */,
 				98258A2E2671D8C600567BC4 /* AppDelegate.m */,
 				98258A302671D8C600567BC4 /* SceneDelegate.h */,
 				98258A312671D8C600567BC4 /* SceneDelegate.m */,
 				98258A332671D8C600567BC4 /* ViewController.h */,
 				98258A342671D8C600567BC4 /* ViewController.m */,
+				98D4CF9B269FFE3400E360C9 /* DashView.swift */,
 				98258A362671D8C600567BC4 /* Main.storyboard */,
 				98258A392671D8C800567BC4 /* Assets.xcassets */,
 				98258A3B2671D8C800567BC4 /* LaunchScreen.storyboard */,
@@ -93,6 +100,21 @@
 				98284AD12687965F0018AE4D /* MapKit.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		98D4CF93269FF1E100E360C9 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		98D4CF96269FF89500E360C9 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				98D4CF97269FF8AE00E360C9 /* MKCoordinateRegion+Extension.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -169,6 +191,8 @@
 				98258A2F2671D8C600567BC4 /* AppDelegate.m in Sources */,
 				98258A4D2671DB7100567BC4 /* Factor.m in Sources */,
 				98258A402671D8C800567BC4 /* main.m in Sources */,
+				98D4CF9C269FFE3400E360C9 /* DashView.swift in Sources */,
+				98D4CF98269FF8AE00E360C9 /* MKCoordinateRegion+Extension.swift in Sources */,
 				98258A322671D8C600567BC4 /* SceneDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
