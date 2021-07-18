@@ -18,6 +18,11 @@
 		98284AD2268796600018AE4D /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 98284AD12687965F0018AE4D /* MapKit.framework */; };
 		98D4CF98269FF8AE00E360C9 /* MKCoordinateRegion+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98D4CF97269FF8AE00E360C9 /* MKCoordinateRegion+Extension.swift */; };
 		98D4CF9C269FFE3400E360C9 /* DashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98D4CF9B269FFE3400E360C9 /* DashView.swift */; };
+		98D4CF9E26A37DD800E360C9 /* Profile ViewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98D4CF9D26A37DD800E360C9 /* Profile ViewViewController.swift */; };
+		98D4CFA026A385E100E360C9 /* ConnectionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98D4CF9F26A385E100E360C9 /* ConnectionsView.swift */; };
+		98D4CFA226A385ED00E360C9 /* Settings View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98D4CFA126A385ED00E360C9 /* Settings View.swift */; };
+		98D4CFA526A386F600E360C9 /* usr_obj.m in Sources */ = {isa = PBXBuildFile; fileRef = 98D4CFA426A386F600E360C9 /* usr_obj.m */; };
+		98D4CFA826A38D9300E360C9 /* HashTable.m in Sources */ = {isa = PBXBuildFile; fileRef = 98D4CFA726A38D9300E360C9 /* HashTable.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,6 +44,13 @@
 		98284AD12687965F0018AE4D /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		98D4CF97269FF8AE00E360C9 /* MKCoordinateRegion+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MKCoordinateRegion+Extension.swift"; sourceTree = "<group>"; };
 		98D4CF9B269FFE3400E360C9 /* DashView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashView.swift; sourceTree = "<group>"; };
+		98D4CF9D26A37DD800E360C9 /* Profile ViewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Profile ViewViewController.swift"; sourceTree = "<group>"; };
+		98D4CF9F26A385E100E360C9 /* ConnectionsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnectionsView.swift; sourceTree = "<group>"; };
+		98D4CFA126A385ED00E360C9 /* Settings View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Settings View.swift"; sourceTree = "<group>"; };
+		98D4CFA326A386EC00E360C9 /* user_obj.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = user_obj.h; sourceTree = "<group>"; };
+		98D4CFA426A386F600E360C9 /* usr_obj.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = usr_obj.m; sourceTree = "<group>"; };
+		98D4CFA626A38D4B00E360C9 /* HashTable.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = HashTable.h; path = ../../../../../Desktop/DataStructures/HashTableAnalysis/HashTableAnalysis/HashTable.h; sourceTree = "<group>"; };
+		98D4CFA726A38D9300E360C9 /* HashTable.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HashTable.m; path = ../../../../../Desktop/DataStructures/HashTableAnalysis/HashTableAnalysis/HashTable.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,9 +91,14 @@
 				98258A2E2671D8C600567BC4 /* AppDelegate.m */,
 				98258A302671D8C600567BC4 /* SceneDelegate.h */,
 				98258A312671D8C600567BC4 /* SceneDelegate.m */,
+				98D4CFA626A38D4B00E360C9 /* HashTable.h */,
+				98D4CFA726A38D9300E360C9 /* HashTable.m */,
 				98258A332671D8C600567BC4 /* ViewController.h */,
 				98258A342671D8C600567BC4 /* ViewController.m */,
 				98D4CF9B269FFE3400E360C9 /* DashView.swift */,
+				98D4CF9D26A37DD800E360C9 /* Profile ViewViewController.swift */,
+				98D4CF9F26A385E100E360C9 /* ConnectionsView.swift */,
+				98D4CFA126A385ED00E360C9 /* Settings View.swift */,
 				98258A362671D8C600567BC4 /* Main.storyboard */,
 				98258A392671D8C800567BC4 /* Assets.xcassets */,
 				98258A3B2671D8C800567BC4 /* LaunchScreen.storyboard */,
@@ -89,6 +106,8 @@
 				98258A3F2671D8C800567BC4 /* main.m */,
 				98258A472671DB0800567BC4 /* Loot-Bridging-Header.h */,
 				98258A4B2671DB6300567BC4 /* Factor.h */,
+				98D4CFA326A386EC00E360C9 /* user_obj.h */,
+				98D4CFA426A386F600E360C9 /* usr_obj.m */,
 				98258A4C2671DB7100567BC4 /* Factor.m */,
 			);
 			path = Loot;
@@ -190,7 +209,12 @@
 				98258A352671D8C600567BC4 /* ViewController.m in Sources */,
 				98258A2F2671D8C600567BC4 /* AppDelegate.m in Sources */,
 				98258A4D2671DB7100567BC4 /* Factor.m in Sources */,
+				98D4CFA526A386F600E360C9 /* usr_obj.m in Sources */,
+				98D4CFA026A385E100E360C9 /* ConnectionsView.swift in Sources */,
 				98258A402671D8C800567BC4 /* main.m in Sources */,
+				98D4CFA826A38D9300E360C9 /* HashTable.m in Sources */,
+				98D4CF9E26A37DD800E360C9 /* Profile ViewViewController.swift in Sources */,
+				98D4CFA226A385ED00E360C9 /* Settings View.swift in Sources */,
 				98D4CF9C269FFE3400E360C9 /* DashView.swift in Sources */,
 				98D4CF98269FF8AE00E360C9 /* MKCoordinateRegion+Extension.swift in Sources */,
 				98258A322671D8C600567BC4 /* SceneDelegate.m in Sources */,

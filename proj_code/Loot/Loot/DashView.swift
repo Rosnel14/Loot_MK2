@@ -11,6 +11,7 @@ import UIKit
 import MapKit
 
 class DashView: UIViewController, MKMapViewDelegate {
+    
 
     //initialization for the application
     override func viewDidLoad() {
@@ -25,6 +26,12 @@ class DashView: UIViewController, MKMapViewDelegate {
         createLabel()
     }
     
+    //load child views beforehand
+//    func cacheViews(){
+//        Profile_ViewViewController
+//
+//    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         //dispose of any resources that can be recreated
@@ -33,8 +40,7 @@ class DashView: UIViewController, MKMapViewDelegate {
     //After View has been loaded
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        
-       loadMap()
+       loadMap() //this instantiates the map view
     }
     
     //label creation
@@ -49,7 +55,7 @@ class DashView: UIViewController, MKMapViewDelegate {
     
     //button functions - start
     
-    private func createBtnSettings(){
+    private func createBtnSettings(){ //settings view
         let button = UIButton(frame: CGRect(x: view.center.x + 50
                                             ,
                                             y: view.center.y + 300,
@@ -66,11 +72,13 @@ class DashView: UIViewController, MKMapViewDelegate {
     }
     
     @objc
-    func buttonActionSettings() {
-        print("Button pressed") 
+    func buttonActionSettings() { //settings action
+        let setView = Settings_View.init()
+        present(setView, animated: true, completion: nil)
+        
     }
     
-    private func createBtnProfile(){
+    private func createBtnProfile(){ //profile
         let button = UIButton(frame: CGRect(x: view.center.x - 250,
                                             y: view.center.y + 300,
                                             width: 200,
@@ -86,11 +94,13 @@ class DashView: UIViewController, MKMapViewDelegate {
     }
     
     @objc
-    func buttonActionProfile() {
-        //print("Button pressed") to be replaced
+    func buttonActionProfile() { //profile action
+        let prof_viw = Profile_ViewViewController.init()
+        
+        present(prof_viw, animated: true, completion: nil)
     }
     
-    private func createBtnConnections(){
+    private func createBtnConnections(){ //connections
         let button = UIButton(frame: CGRect(x: view.center.x - 100,
                                             y: view.center.y + 300,
                                             width: 200,
@@ -106,8 +116,9 @@ class DashView: UIViewController, MKMapViewDelegate {
     }
     
     @objc
-    func buttonActionConnections() {
-        //print("Button pressed") to be replaced
+    func buttonActionConnections() { //connections action
+        let conView = ConnectionsView.init()
+        present(conView, animated: true, completion: nil)
     }
     
     //button functions - end

@@ -10,6 +10,13 @@
 
 @implementation Factor
 
-
+-(instancetype)init:(NSString *)category sub:(NSString *)subtitle{
+    if(self){
+        self = [super init];
+        self.category = category;
+        self.subtitle = subtitle;
+    }
+    return self;
+}
 
 @end
