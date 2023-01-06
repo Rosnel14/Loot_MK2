@@ -8,7 +8,6 @@
 #ifndef user_obj_h
 #define user_obj_h
 #import "Factor.h"
-#import "HashTable.h"
 #import <UIKit/UIKit.h>
 
 @interface user_obj : NSObject
